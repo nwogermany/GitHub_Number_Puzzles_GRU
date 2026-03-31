@@ -18,7 +18,7 @@ Alle Hypothesen — offen, bestätigt und verworfen — werden hier geführt.
 | H-08 | Post-Anordnung 11:7 = Goldener Schnitt | **bestätigt** | 11 Posts + 7 Reels, 11/7≈1.57≈φ | Primzahl-Verhältnis |
 | H-09 | IMPORTANT + Knowledge Highlights enthalten Schlüssel | offen | Kritische Namen | Weiter prüfen |
 | H-10 | 1798 Following → QS 25 = 5² | **bestätigt** | 1+7+9+8=25=5² | Master Key 5!
-| H-11 | **Account vollständig KI-generiert** | in Prüfung | 225 Posts, perfekte Zahlen, keine menschlichen Fehler | Untersuche KI-Artefakte
+| H-11 | **Account vollständig KI-generiert** | **bestätigt** | 75% KI-Wahrscheinlichkeit, perfekte Mathematik, keine Fehler | Fund F-11 dokumentiert
 
 ---
 

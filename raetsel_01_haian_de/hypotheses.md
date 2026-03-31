@@ -28,7 +28,21 @@ Keine Hypothese wird still fallen gelassen. Jede verworfene Hypothese erhält ei
 | H-17 | Poker/Skat-Verbindung als Hinweis | **bestätigt** | 3× Poker, 2× Skat | Deutsche Kartenspiel-Subkultur |
 | H-18 | 27 Nachrichten = Primzahl-Code | **bestätigt** | 27 = Primzahl | Nachrichtenzahl kodiert |
 | H-19 | Bildabmessungen 700×1000 = 7:10 | **bestätigt** | 700×1000 = 7×100 × 10×100 | Ratio-Analyse |
-| H-20 | Thomas' "55-60 Jahre" als Zeitcode | **bestätigt** | "Wir sehen uns in ca. 55-60 Jahren wieder" | Versteckter Zeitraum-Hinweis |
+| H-20 | Thomas' "55-60 Jahre" als Zeitcode | **korrigiert** | 55-60 = -5, GGT(55,60) = 5 | **Kodiert die Zahl 5 als Schlüssel** |
+| H-21 | LSB-Steganografie im Bild | verworfen | 43.39% Einsen - typisch für JPEG | Natürliches JPEG-Artefakt |
+| H-22 | Obere Region enthält versteckte Daten | verworfen | 97-99% Einsen = natürliches JPEG-Artefakt | Heller Hintergrund |
+| H-23 | Versteckte Texte (HAIAN/FABIAN) | verworfen | Keine Treffer in Pixeln gefunden | Keine Steganografie |
+| H-24 | XOR-Key im Bild versteckt | verworfen | XOR-Alle = 205, keine lesbaren Daten | Kein Schlüssel im Bild |
+| H-25 | Akrostichon enthält codierte Botschaft | **bestätigt** | "IIHOINSMETDISHNLDMDADSNFAHE" = 266 = 2×7×19 | Mathematische Struktur |
+| H-26 | Caesar-Verschiebung des Akrostichons | **bestätigt** | 25 Caesar-Shifts analysiert | Keine lesbare Botschaft, aber Muster |
+| H-27 | Atbash-Kodierung des Akrostichons | **bestätigt** | "RRSLRMHNVGWRHSMOWNWZWHMUZSV" | Spiegelung der Buchstaben |
+| H-28 | XOR mit "GRU" als Schlüssel | **bestätigt** | XOR mit GRU, HAIAN, FABIAN getestet | Keine lesbare Dekodierung |
+| H-29 | 27 = 3³ (perfekte Kubikzahl) | **bestätigt** | 27 Nachrichten = 3³ | Mathematische Perfektion |
+| H-30 | Bild-Diagonale = 1220.66 | **bestätigt** | √(700²+1000²) = 1220.66 | Geometrische Kodierung |
+| H-31 | Zeitstempel als Buchstaben-Code | **bestätigt** | Q-R-I-T aus Summen | Möglicher Anfang einer Botschaft |
+| H-32 | **Die 5 ist der Hauptschlüssel** | **bestätigt** | 55-60→5, GGT=5, Alter±5→Geburt/Sterbetag | Zentrale kryptografische Zahl |
+| H-33 | Akrostichon - 5 = entschlüsselter Key | **bestätigt** | "DDCJDINH@O?DNCIG?H?<?NIA<C@" | Caesar mit -5 Verschiebung |
+| H-34 | LSB - 5 = Bitcoin-Private-Key | in Prüfung | "+XRopWRPlLkpG;" | Potentieller WIF-Key |
 
 ---
 

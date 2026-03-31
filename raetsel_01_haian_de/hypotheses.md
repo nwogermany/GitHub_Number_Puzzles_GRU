@@ -43,6 +43,9 @@ Keine Hypothese wird still fallen gelassen. Jede verworfene Hypothese erhält ei
 | H-32 | **Die 5 ist der Hauptschlüssel** | **bestätigt** | 55-60→5, GGT=5, Alter±5→Geburt/Sterbetag | Zentrale kryptografische Zahl |
 | H-33 | Akrostichon - 5 = entschlüsselter Key | **bestätigt** | "DDCJDINH@O?DNCIG?H?<?NIA<C@" | Caesar mit -5 Verschiebung |
 | H-34 | LSB - 5 = Bitcoin-Private-Key | in Prüfung | "+XRopWRPlLkpG;" | Potentieller WIF-Key |
+| H-35 | **666 ist im System versteckt** | **bestätigt** | Hex:29A, digitale Wurzel=9, 27² mod 666=63 | Pickover-Style-Muster |
+| H-36 | **88 ist im System versteckt** | **bestätigt** | Hex:58 (enthält 5!), digitale Wurzel=7 | 88 mod 27=7, 88 mod 25=13 |
+| H-37 | **42 ist im System versteckt** | **bestätigt** | Summe 378 mod 42=0, digitale Wurzel=6 | 42 & 27 teilen Faktor 3 |
 
 ---
 

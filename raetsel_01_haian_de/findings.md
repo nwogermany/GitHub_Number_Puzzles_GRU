@@ -679,7 +679,6 @@ Schlüssel = 5
 ├─ 666/88/42-Pattern: Pickover-Style-Verbindungen
 ├─ Primfaktor-Verbindungen: Gemeinsame Faktoren
 └─ Rekursive Ketten: x → (x×5) mod n Ketten
-└─ Keys: Akrostichon-5, LSB-5
 ```
 
 ### Das Rätsel ist **FAST VOLLSTÄNDIG GELÖST** — Der Schlüssel ist die **5**!

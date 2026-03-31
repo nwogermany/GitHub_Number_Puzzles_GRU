@@ -74,16 +74,24 @@
 
         .lang-btn {
             width: 36px;
-            height: 28px;
+            height: 24px;
             border: 2px solid transparent;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
             transition: all 0.3s ease;
-            font-size: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             background: transparent;
+            overflow: hidden;
+            padding: 0;
+        }
+
+        .lang-btn svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
         }
 
         .lang-btn:hover {
@@ -377,8 +385,7 @@
 
             .lang-btn {
                 width: 32px;
-                height: 24px;
-                font-size: 16px;
+                height: 22px;
             }
         }
     </style>
@@ -386,10 +393,35 @@
 <body>
     <!-- Language Switcher -->
     <div class="lang-switcher">
-        <button class="lang-btn active" onclick="setLanguage('en')" title="English">🇬🇧</button>
-        <button class="lang-btn" onclick="setLanguage('de')" title="Deutsch">🇩🇪</button>
-        <button class="lang-btn" onclick="setLanguage('fr')" title="Français">🇫🇷</button>
-        <button class="lang-btn" onclick="setLanguage('es')" title="Español">🇪🇸</button>
+        <button class="lang-btn active" onclick="setLanguage('en')" title="English">
+            <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#012169" d="M0 0h640v480H0z"/>
+                <path fill="#FFF" d="M75 0l244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z"/>
+                <path fill="#C8102E" d="M424 281l216 159v40L369 281h55zm-184 20l6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z"/>
+                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z"/>
+                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z"/>
+            </svg>
+        </button>
+        <button class="lang-btn" onclick="setLanguage('de')" title="Deutsch">
+            <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFCE00" d="M0 320h640v160H0z"/>
+                <path d="M0 0h640v160H0z"/>
+                <path fill="#DD0000" d="M0 160h640v160H0z"/>
+            </svg>
+        </button>
+        <button class="lang-btn" onclick="setLanguage('fr')" title="Français">
+            <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#FFF" d="M0 0h640v480H0z"/>
+                <path fill="#002395" d="M0 0h213.3v480H0z"/>
+                <path fill="#ED2939" d="M426.7 0H640v480H426.7z"/>
+            </svg>
+        </button>
+        <button class="lang-btn" onclick="setLanguage('es')" title="Español">
+            <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#AA151B" d="M0 0h640v480H0z"/>
+                <path fill="#F1BF00" d="M0 120h640v240H0z"/>
+            </svg>
+        </button>
     </div>
 
     <div class="container">

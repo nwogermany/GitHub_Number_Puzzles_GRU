@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krypto-Intelligenz-Aufdeckungs-Projekt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0f0f1a;
+            --bg-secondary: #1a1a2e;
+            --bg-card: #16213e;
+            --accent-cyan: #00d4ff;
+            --accent-magenta: #ff006e;
+            --accent-lime: #adff02;
+            --accent-orange: #ff9500;
+            --text-primary: #e8e8e8;
+            --text-secondary: #a0a0b0;
+            --border-glow: rgba(0, 212, 255, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(255, 0, 110, 0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(173, 255, 2, 0.04) 0%, transparent 60%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-magenta));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-lime));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: rgba(0, 212, 255, 0.15);
+            border: 1px solid var(--accent-cyan);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            margin-top: 20px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Puzzle Grid */
+        .puzzles-grid {
+            display: grid;
+            gap: 30px;
+        }
+
+        .puzzle-card {
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: fadeInUp 0.6s ease-out backwards;
+        }
+
+        .puzzle-card:nth-child(1) { animation-delay: 0.1s; }
+        .puzzle-card:nth-child(2) { animation-delay: 0.2s; }
+        .puzzle-card:nth-child(3) { animation-delay: 0.3s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .puzzle-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-cyan);
+            box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15);
+        }
+
+        .puzzle-header {
+            padding: 25px 30px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 0, 110, 0.05));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .puzzle-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .puzzle-number {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-magenta));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .puzzle-name {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .puzzle-name a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .puzzle-name a:hover {
+            color: var(--accent-cyan);
+        }
+
+        .puzzle-status {
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .status-partial {
+            background: rgba(255, 149, 0, 0.15);
+            color: var(--accent-orange);
+            border: 1px solid var(--accent-orange);
+        }
+
+        .status-investigating {
+            background: rgba(0, 212, 255, 0.15);
+            color: var(--accent-cyan);
+            border: 1px solid var(--accent-cyan);
+        }
+
+        .puzzle-body {
+            padding: 30px;
+        }
+
+        .puzzle-description {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .discoveries {
+            margin-bottom: 25px;
+        }
+
+        .discoveries h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-lime);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .discoveries h4::before {
+            content: '◆';
+            font-size: 0.7rem;
+        }
+
+        .discovery-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .discovery-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 15px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 10px;
+            border-left: 3px solid var(--accent-cyan);
+            font-size: 0.9rem;
+        }
+
+        .discovery-item .icon {
+            font-size: 1rem;
+            margin-top: 2px;
+        }
+
+        .discovery-item .text {
+            color: var(--text-secondary);
+        }
+
+        .discovery-item .highlight {
+            color: var(--accent-cyan);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .stat-value {
+            color: var(--accent-lime);
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .puzzle-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .stats-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon">🔐</div>
+                <h1>Krypto-Intelligenz</h1>
+            </div>
+            <p class="subtitle">Forensische Aufdeckung komplexer kryptografischer Rätsel auf Geheimdienst-Niveau</p>
+            <span class="badge">NSA/CIA LEVEL INVESTIGATION</span>
+        </header>
+
+        <div class="puzzles-grid">
+            <!-- Puzzle 01: haian.de -->
+            <article class="puzzle-card">
+                <div class="puzzle-header">
+                    <div class="puzzle-title">
+                        <div class="puzzle-number">01</div>
+                        <h2 class="puzzle-name"><a href="raetsel_01_haian_de/README.md">haian.de</a></h2>
+                    </div>
+                    <span class="puzzle-status status-partial">⚠ TEILWEISE GELÖST</span>
+                </div>
+                <div class="puzzle-body">
+                    <p class="puzzle-description">
+                        Scheinbar legitime Trauerseite für Fabian "Haian" Schüßler (*30.10.1986 †20.10.2011). 
+                        Nach forensischer Analyse entpuppt sich die Website als mehrschichtiges kryptografisches Rätsel mit Finte-Struktur.
+                    </p>
+                    
+                    <div class="discoveries">
+                        <h4>Forensische Entdeckungen</h4>
+                        <div class="discovery-list">
+                            <div class="discovery-item">
+                                <span class="icon">📊</span>
+                                <span class="text"><span class="highlight">Mathematische Perfektion:</span> Alter = 24.97 Jahre ≈ 25 (5²) — perfekte Quadratzahl</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">🔢</span>
+                                <span class="text"><span class="highlight">XOR-Kodierung:</span> 30^10=20, 20^10=30 — symmetrische Beziehung</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">⏰</span>
+                                <span class="text"><span class="highlight">Temporale Anomalie:</span> Chronologie-Bruch mit negativem Zeitabstand (-56h)</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">🖼</span>
+                                <span class="text"><span class="highlight">Untypische Werte:</span> 700×1000 Pixel (7:10), 269.508 Bytes (=0x41CC4 im ETag)</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">♠️</span>
+                                <span class="text"><span class="highlight">Subkultur-Code:</span> Poker (3×) + Skat (2×) — deutsche Glücksspiel-Subkultur</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">💾</span>
+                                <span class="text"><span class="highlight">Binäre Steganografie:</span> LSB-Extraktion: "0]Wtu\WUqQpuL@$"</span>
+                            </div>
+                            <div class="discovery-item">
+                                <span class="icon">🌐</span>
+                                <span class="text"><span class="highlight">14+ Jahre online:</span> Beweist absichtliche Pflege des Rätsels seit 2011</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span>📁</span>
+                            <span>Dateien:</span>
+                            <span class="stat-value">25 Funde</span>
+                        </div>
+                        <div class="stat">
+                            <span>💡</span>
+                            <span>Hypothesen:</span>
+                            <span class="stat-value">16 bestätigt</span>
+                        </div>
+                        <div class="stat">
+                            <span>🔒</span>
+                            <span>Kodierung:</span>
+                            <span class="stat-value">6schichtig</span>
+                        </div>
+                        <div class="stat">
+                            <span>⏱</span>
+                            <span>Status:</span>
+                            <span class="stat-value">TEILWEISE GELÖST</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Weitere Rätsel werden hier hinzugefügt -->
+            <article class="puzzle-card">
+                <div class="puzzle-header">
+                    <div class="puzzle-title">
+                        <div class="puzzle-number">02</div>
+                        <h2 class="puzzle-name">???</h2>
+                    </div>
+                    <span class="puzzle-status status-investigating">🔍 IN BEARBEITUNG</span>
+                </div>
+                <div class="puzzle-body">
+                    <p class="puzzle-description">
+                        Neues Rätsel steht zur Untersuchung bereit. Die Methodik umfasst 
+                        7 Phasen der forensischen Analyse mit mehrfachem Reasoning und multidimensionalem Denken.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span>📋</span>
+                            <span>Phase:</span>
+                            <span class="stat-value">Ausstehend</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <footer>
+            <p>🛡️ Krypto-Intelligenz-Aufdeckungs-Projekt | <a href="AGENTS.md">AGENTS.md</a> | <a href="README.md">README.md</a></p>
+            <p style="margin-top: 10px; opacity: 0.6;">Forensische Analyse auf NSA/CIA-Geheimdienst-Niveau</p>
+        </footer>
+    </div>
+</body>
+</html>

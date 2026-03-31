@@ -368,18 +368,38 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
+            .lang-switcher {
+                top: 10px;
+                right: 10px;
+                padding: 6px 8px;
+            }
+
+            .lang-btn {
+                width: 32px;
+                height: 24px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" onclick="setLanguage('en')" title="English">🇬🇧</button>
+        <button class="lang-btn" onclick="setLanguage('de')" title="Deutsch">🇩🇪</button>
+        <button class="lang-btn" onclick="setLanguage('fr')" title="Français">🇫🇷</button>
+        <button class="lang-btn" onclick="setLanguage('es')" title="Español">🇪🇸</button>
+    </div>
+
     <div class="container">
         <header>
             <div class="logo">
                 <div class="logo-icon">🔐</div>
-                <h1>Krypto-Intelligenz</h1>
+                <h1 data-i18n="header.title">Crypto-Intelligence</h1>
             </div>
-            <p class="subtitle">Forensische Aufdeckung komplexer kryptografischer Rätsel auf Geheimdienst-Niveau</p>
-            <span class="badge">NSA/CIA LEVEL INVESTIGATION</span>
+            <p class="subtitle" data-i18n="header.subtitle">Forensic investigation of complex cryptographic puzzles at intelligence agency level</p>
+            <span class="badge" data-i18n="header.badge">NSA/CIA LEVEL INVESTIGATION</span>
         </header>
 
         <div class="puzzles-grid">

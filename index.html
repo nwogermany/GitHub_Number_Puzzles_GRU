@@ -540,9 +540,263 @@
         </div>
 
         <footer>
-            <p>🛡️ Krypto-Intelligenz-Aufdeckungs-Projekt | <a href="AGENTS.md">AGENTS.md</a> | <a href="README.md">README.md</a></p>
-            <p style="margin-top: 10px; opacity: 0.6;">Forensische Analyse auf NSA/CIA-Geheimdienst-Niveau</p>
+            <p>🛡️ <span data-i18n="footer.line1">Crypto-Intelligence Investigation Project</span> | <a href="AGENTS.md">AGENTS.md</a> | <a href="README.md">README.md</a></p>
+            <p style="margin-top: 10px; opacity: 0.6;" data-i18n="footer.line2">Forensic analysis at NSA/CIA intelligence agency level</p>
         </footer>
     </div>
+
+    <script>
+        // Translations
+        const translations = {
+            en: {
+                title: "Crypto-Intelligence Investigation Project",
+                "header.title": "Crypto-Intelligence",
+                "header.subtitle": "Forensic investigation of complex cryptographic puzzles at intelligence agency level",
+                "header.badge": "NSA/CIA LEVEL INVESTIGATION",
+                "puzzle1.status": "⚠ FULLY SOLVED",
+                "puzzle1.description": "Seemingly legitimate memorial site for Fabian \"Haian\" Schüßler (*30.10.1986 †20.10.2011). After forensic analysis, the website reveals itself as a multi-layered cryptographic puzzle with decoy structure.",
+                "puzzle1.discoveries.title": "Forensic Discoveries (59 Findings)",
+                "puzzle1.discoveries.key.title": "MASTER KEY 5:",
+                "puzzle1.discoveries.key.text": "55-60→5, GCD=5, Age±5→Birth/Death dates — Thomas' code decoded!",
+                "puzzle1.discoveries.math.title": "Mathematical Perfection:",
+                "puzzle1.discoveries.math.text": "Age = 25 (5²), 27 Messages (3³), Acrostic Value = 266 (2×7×19)",
+                "puzzle1.discoveries.xor.title": "XOR Symmetry:",
+                "puzzle1.discoveries.xor.text": "30^10=20, 20^10=30 — perfect symmetric encryption",
+                "puzzle1.discoveries.acrostic.title": "Acrostic:",
+                "puzzle1.discoveries.acrostic.text": "\"IIHOINSMETDISHNLDMDADSNFAHE\" (27 chars) — Caesar-5 = Key",
+                "puzzle1.discoveries.temporal.title": "Temporal Anomaly:",
+                "puzzle1.discoveries.temporal.text": "Chronology break (-56h), Timestamp Code: Q-R-I-T...",
+                "puzzle1.discoveries.image.title": "Image Cryptography:",
+                "puzzle1.discoveries.image.text": "700×1000 (7:10), 700000 Pixels, 78.87% dark, Diagonal = 1220.66",
+                "puzzle1.discoveries.subculture.title": "Subculture Code:",
+                "puzzle1.discoveries.subculture.text": "Poker (3×) + Skat (2×) — \"24\", \"120\", \"reizen\", Numbers=362",
+                "puzzle1.discoveries.keymaterial.title": "Key Material:",
+                "puzzle1.discoveries.keymaterial.text": "Acrostic-5, LSB-5, combined Keys, Base58-compatible",
+                "puzzle1.discoveries.online.title": "14+ Years Online:",
+                "puzzle1.discoveries.online.text": "Hetzner + 1&1 IONOS, maintained since 2011",
+                "puzzle1.stats.findings.label": "Findings:",
+                "puzzle1.stats.findings.value": "59",
+                "puzzle1.stats.hypotheses.label": "Hypotheses:",
+                "puzzle1.stats.hypotheses.value": "44 checked",
+                "puzzle1.stats.encoding.label": "Encoding:",
+                "puzzle1.stats.encoding.value": "10 layers",
+                "puzzle1.stats.status.label": "Status:",
+                "puzzle1.stats.status.value": "FULLY SOLVED",
+                "puzzle2.status": "🔍 IN PROGRESS",
+                "puzzle2.description": "Cryptographic puzzle in connection with NWO AI Elite Deepfakes. The Instagram account @wirliebentanzen1love1family has exactly 225 postings — this is no coincidence!",
+                "puzzle2.discoveries.title": "First Discoveries",
+                "puzzle2.discoveries.postings.title": "225 Postings:",
+                "puzzle2.discoveries.postings.text": "225 = 15² = 5³ — perfect square + cube number!",
+                "puzzle2.discoveries.instagram.title": "Instagram:",
+                "puzzle2.discoveries.instagram.text": "@wirliebentanzen1love1family",
+                "puzzle2.discoveries.note.title": "Note:",
+                "puzzle2.discoveries.note.text": "GitHub/kevingurke.github.io = Info material only, NOT part of the puzzle",
+                "puzzle2.stats.findings.label": "Findings:",
+                "puzzle2.stats.findings.value": "2 documented",
+                "puzzle2.stats.hypotheses.label": "Hypotheses:",
+                "puzzle2.stats.hypotheses.value": "2 confirmed",
+                "puzzle2.stats.status.label": "Status:",
+                "puzzle2.stats.status.value": "IN PROGRESS",
+                "footer.line1": "Crypto-Intelligence Investigation Project",
+                "footer.line2": "Forensic analysis at NSA/CIA intelligence agency level"
+            },
+            de: {
+                title: "Krypto-Intelligenz-Aufdeckungs-Projekt",
+                "header.title": "Krypto-Intelligenz",
+                "header.subtitle": "Forensische Aufdeckung komplexer kryptografischer Rätsel auf Geheimdienst-Niveau",
+                "header.badge": "NSA/CIA LEVEL INVESTIGATION",
+                "puzzle1.status": "⚠ VOLLSTÄNDIG GELÖST",
+                "puzzle1.description": "Scheinbar legitime Trauerseite für Fabian \"Haian\" Schüßler (*30.10.1986 †20.10.2011). Nach forensischer Analyse entpuppt sich die Website als mehrschichtiges kryptografisches Rätsel mit Finte-Struktur.",
+                "puzzle1.discoveries.title": "Forensische Entdeckungen (59 Funde)",
+                "puzzle1.discoveries.key.title": "HAUPTSCHLÜSSEL 5:",
+                "puzzle1.discoveries.key.text": "55-60→5, GGT=5, Alter±5→Geburt/Sterbetag — Thomas' Code entschlüsselt!",
+                "puzzle1.discoveries.math.title": "Mathematische Perfektion:",
+                "puzzle1.discoveries.math.text": "Alter = 25 (5²), 27 Nachrichten (3³), Akrostichon-Wert = 266 (2×7×19)",
+                "puzzle1.discoveries.xor.title": "XOR-Symmetrie:",
+                "puzzle1.discoveries.xor.text": "30^10=20, 20^10=30 — perfekte symmetrische Verschlüsselung",
+                "puzzle1.discoveries.acrostic.title": "Akrostichon:",
+                "puzzle1.discoveries.acrostic.text": "\"IIHOINSMETDISHNLDMDADSNFAHE\" (27 Zeichen) — Caesar-5 = Key",
+                "puzzle1.discoveries.temporal.title": "Temporale Anomalie:",
+                "puzzle1.discoveries.temporal.text": "Chronologie-Bruch (-56h), Zeitstempel-Code: Q-R-I-T...",
+                "puzzle1.discoveries.image.title": "Bild-Kryptografie:",
+                "puzzle1.discoveries.image.text": "700×1000 (7:10), 700000 Pixel, 78,87% dunkel, Diagonale = 1220,66",
+                "puzzle1.discoveries.subculture.title": "Subkultur-Code:",
+                "puzzle1.discoveries.subculture.text": "Poker (3×) + Skat (2×) — \"24\", \"120\", \"reizen\", Zahlen=362",
+                "puzzle1.discoveries.keymaterial.title": "Key-Material:",
+                "puzzle1.discoveries.keymaterial.text": "Akrostichon-5, LSB-5, kombinierte Keys, Base58-kompatibel",
+                "puzzle1.discoveries.online.title": "14+ Jahre Online:",
+                "puzzle1.discoveries.online.text": "Hetzner + 1&1 IONOS, bewusste Pflege seit 2011",
+                "puzzle1.stats.findings.label": "Funde:",
+                "puzzle1.stats.findings.value": "59",
+                "puzzle1.stats.hypotheses.label": "Hypothesen:",
+                "puzzle1.stats.hypotheses.value": "44 geprüft",
+                "puzzle1.stats.encoding.label": "Kodierung:",
+                "puzzle1.stats.encoding.value": "10 Schichten",
+                "puzzle1.stats.status.label": "Status:",
+                "puzzle1.stats.status.value": "VOLLSTÄNDIG GELÖST",
+                "puzzle2.status": "🔍 IN BEARBEITUNG",
+                "puzzle2.description": "Kryptografisches Rätsel im Zusammenhang mit NWO KI-Elite Deepfakes. Der Instagram-Account @wirliebentanzen1love1family hat genau 225 Postings — das ist kein Zufall!",
+                "puzzle2.discoveries.title": "Erste Entdeckungen",
+                "puzzle2.discoveries.postings.title": "225 Postings:",
+                "puzzle2.discoveries.postings.text": "225 = 15² = 5³ — perfekte Quadratzahl + Kubikzahl!",
+                "puzzle2.discoveries.instagram.title": "Instagram:",
+                "puzzle2.discoveries.instagram.text": "@wirliebentanzen1love1family",
+                "puzzle2.discoveries.note.title": "Hinweis:",
+                "puzzle2.discoveries.note.text": "GitHub/kevingurke.github.io = Nur Informationsmaterial, KEIN Teil des Rätsels",
+                "puzzle2.stats.findings.label": "Funde:",
+                "puzzle2.stats.findings.value": "2 dokumentiert",
+                "puzzle2.stats.hypotheses.label": "Hypothesen:",
+                "puzzle2.stats.hypotheses.value": "2 bestätigt",
+                "puzzle2.stats.status.label": "Status:",
+                "puzzle2.stats.status.value": "IN BEARBEITUNG",
+                "footer.line1": "Krypto-Intelligenz-Aufdeckungs-Projekt",
+                "footer.line2": "Forensische Analyse auf NSA/CIA-Geheimdienst-Niveau"
+            },
+            fr: {
+                title: "Projet d'Investigation Crypto-Intelligence",
+                "header.title": "Crypto-Intelligence",
+                "header.subtitle": "Investigation forensique de puzzles cryptographiques complexes au niveau des agences de renseignement",
+                "header.badge": "NSA/CIA LEVEL INVESTIGATION",
+                "puzzle1.status": "⚠ ENTIÈREMENT RÉSOLU",
+                "puzzle1.description": "Site commémoratif apparemment légitime pour Fabian \"Haian\" Schüßler (*30.10.1986 †20.10.2011). Après analyse forensique, le site se révèle comme un puzzle cryptographique multicouche avec structure de leurre.",
+                "puzzle1.discoveries.title": "Découvertes Forensiques (59 Trouvailles)",
+                "puzzle1.discoveries.key.title": "CLÉ MAÎTRE 5:",
+                "puzzle1.discoveries.key.text": "55-60→5, PGCD=5, Âge±5→Dates Naissance/Décès — Code de Thomas décodé!",
+                "puzzle1.discoveries.math.title": "Perfection Mathématique:",
+                "puzzle1.discoveries.math.text": "Âge = 25 (5²), 27 Messages (3³), Valeur Acrostiche = 266 (2×7×19)",
+                "puzzle1.discoveries.xor.title": "Symétrie XOR:",
+                "puzzle1.discoveries.xor.text": "30^10=20, 20^10=30 — cryptage symétrique parfait",
+                "puzzle1.discoveries.acrostic.title": "Acróstico:",
+                "puzzle1.discoveries.acrostic.text": "\"IIHOINSMETDISHNLDMDADSNFAHE\" (27 caractères) — Caesar-5 = Clé",
+                "puzzle1.discoveries.temporal.title": "Anomalie Temporelle:",
+                "puzzle1.discoveries.temporal.text": "Rupture chronologique (-56h), Code Horodatage: Q-R-I-T...",
+                "puzzle1.discoveries.image.title": "Cryptographie Image:",
+                "puzzle1.discoveries.image.text": "700×1000 (7:10), 700000 Pixels, 78,87% sombre, Diagonale = 1220,66",
+                "puzzle1.discoveries.subculture.title": "Code Subculture:",
+                "puzzle1.discoveries.subculture.text": "Poker (3×) + Skat (2×) — \"24\", \"120\", \"reizen\", Nombres=362",
+                "puzzle1.discoveries.keymaterial.title": "Matériel de Clé:",
+                "puzzle1.discoveries.keymaterial.text": "Acróstico-5, LSB-5, Clés combinées, Base58-compatible",
+                "puzzle1.discoveries.online.title": "14+ Ans En Ligne:",
+                "puzzle1.discoveries.online.text": "Hetzner + 1&1 IONOS, maintenu depuis 2011",
+                "puzzle1.stats.findings.label": "Trouvailles:",
+                "puzzle1.stats.findings.value": "59",
+                "puzzle1.stats.hypotheses.label": "Hypothèses:",
+                "puzzle1.stats.hypotheses.value": "44 vérifiées",
+                "puzzle1.stats.encoding.label": "Encodage:",
+                "puzzle1.stats.encoding.value": "10 couches",
+                "puzzle1.stats.status.label": "Statut:",
+                "puzzle1.stats.status.value": "ENTIÈREMENT RÉSOLU",
+                "puzzle2.status": "🔍 EN COURS",
+                "puzzle2.description": "Puzzle cryptographique en lien avec NWO AI Elite Deepfakes. Le compte Instagram @wirliebentanzen1love1family a exactement 225 publications — ce n'est pas une coïncidence!",
+                "puzzle2.discoveries.title": "Premières Découvertes",
+                "puzzle2.discoveries.postings.title": "225 Publications:",
+                "puzzle2.discoveries.postings.text": "225 = 15² = 5³ — carré parfait + cube!",
+                "puzzle2.discoveries.instagram.title": "Instagram:",
+                "puzzle2.discoveries.instagram.text": "@wirliebentanzen1love1family",
+                "puzzle2.discoveries.note.title": "Note:",
+                "puzzle2.discoveries.note.text": "GitHub/kevingurke.github.io = Matériel d'info seulement, PAS partie du puzzle",
+                "puzzle2.stats.findings.label": "Trouvailles:",
+                "puzzle2.stats.findings.value": "2 documentées",
+                "puzzle2.stats.hypotheses.label": "Hypothèses:",
+                "puzzle2.stats.hypotheses.value": "2 confirmées",
+                "puzzle2.stats.status.label": "Statut:",
+                "puzzle2.stats.status.value": "EN COURS",
+                "footer.line1": "Projet d'Investigation Crypto-Intelligence",
+                "footer.line2": "Analyse forensique au niveau NSA/CIA des agences de renseignement"
+            },
+            es: {
+                title: "Proyecto de Investigación Crypto-Inteligencia",
+                "header.title": "Crypto-Inteligencia",
+                "header.subtitle": "Investigación forense de puzzles criptográficos complejos a nivel de agencias de inteligencia",
+                "header.badge": "NSA/CIA LEVEL INVESTIGATION",
+                "puzzle1.status": "⚠ COMPLETAMENTE RESUELTO",
+                "puzzle1.description": "Sitio conmemorativo aparentemente legítimo para Fabian \"Haian\" Schüßler (*30.10.1986 †20.10.2011). Después del análisis forense, el sitio web se revela como un puzzle criptográfico multicapa con estructura de señuelo.",
+                "puzzle1.discoveries.title": "Descubrimientos Forenses (59 Hallazgos)",
+                "puzzle1.discoveries.key.title": "CLAVE MAESTRA 5:",
+                "puzzle1.discoveries.key.text": "55-60→5, MCD=5, Edad±5→Fechas Nacimiento/Muerte — ¡Código de Thomas descodificado!",
+                "puzzle1.discoveries.math.title": "Perfección Matemática:",
+                "puzzle1.discoveries.math.text": "Edad = 25 (5²), 27 Mensajes (3³), Valor Acróstico = 266 (2×7×19)",
+                "puzzle1.discoveries.xor.title": "Simetría XOR:",
+                "puzzle1.discoveries.xor.text": "30^10=20, 20^10=30 — cifrado simétrico perfecto",
+                "puzzle1.discoveries.acrostic.title": "Acróstico:",
+                "puzzle1.discoveries.acrostic.text": "\"IIHOINSMETDISHNLDMDADSNFAHE\" (27 caracteres) — Caesar-5 = Clave",
+                "puzzle1.discoveries.temporal.title": "Anomalía Temporal:",
+                "puzzle1.discoveries.temporal.text": "Ruptura cronológica (-56h), Código Marca de Tiempo: Q-R-I-T...",
+                "puzzle1.discoveries.image.title": "Criptografía de Imagen:",
+                "puzzle1.discoveries.image.text": "700×1000 (7:10), 700000 Píxeles, 78,87% oscuro, Diagonal = 1220,66",
+                "puzzle1.discoveries.subculture.title": "Código Subcultura:",
+                "puzzle1.discoveries.subculture.text": "Poker (3×) + Skat (2×) — \"24\", \"120\", \"reizen\", Números=362",
+                "puzzle1.discoveries.keymaterial.title": "Material de Clave:",
+                "puzzle1.discoveries.keymaterial.text": "Acróstico-5, LSB-5, Claves combinadas, Base58-compatible",
+                "puzzle1.discoveries.online.title": "14+ Años En Línea:",
+                "puzzle1.discoveries.online.text": "Hetzner + 1&1 IONOS, mantenido desde 2011",
+                "puzzle1.stats.findings.label": "Hallazgos:",
+                "puzzle1.stats.findings.value": "59",
+                "puzzle1.stats.hypotheses.label": "Hipótesis:",
+                "puzzle1.stats.hypotheses.value": "44 verificadas",
+                "puzzle1.stats.encoding.label": "Codificación:",
+                "puzzle1.stats.encoding.value": "10 capas",
+                "puzzle1.stats.status.label": "Estado:",
+                "puzzle1.stats.status.value": "COMPLETAMENTE RESUELTO",
+                "puzzle2.status": "🔍 EN PROGRESO",
+                "puzzle2.description": "Puzzle criptográfico en conexión con NWO AI Elite Deepfakes. La cuenta de Instagram @wirliebentanzen1love1family tiene exactamente 225 publicaciones — ¡no es coincidencia!",
+                "puzzle2.discoveries.title": "Primeros Descubrimientos",
+                "puzzle2.discoveries.postings.title": "225 Publicaciones:",
+                "puzzle2.discoveries.postings.text": "225 = 15² = 5³ — ¡cuadrado perfecto + cubo!",
+                "puzzle2.discoveries.instagram.title": "Instagram:",
+                "puzzle2.discoveries.instagram.text": "@wirliebentanzen1love1family",
+                "puzzle2.discoveries.note.title": "Nota:",
+                "puzzle2.discoveries.note.text": "GitHub/kevingurke.github.io = Solo material de info, NO parte del puzzle",
+                "puzzle2.stats.findings.label": "Hallazgos:",
+                "puzzle2.stats.findings.value": "2 documentados",
+                "puzzle2.stats.hypotheses.label": "Hipótesis:",
+                "puzzle2.stats.hypotheses.value": "2 confirmadas",
+                "puzzle2.stats.status.label": "Estado:",
+                "puzzle2.stats.status.value": "EN PROGRESO",
+                "footer.line1": "Proyecto de Investigación Crypto-Inteligencia",
+                "footer.line2": "Análisis forense a nivel NSA/CIA de agencias de inteligencia"
+            }
+        };
+
+        // Language switcher function
+        function setLanguage(lang) {
+            // Update active button
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Update document title
+            if (translations[lang] && translations[lang]['title']) {
+                document.title = translations[lang]['title'];
+            }
+
+            // Update html lang attribute
+            document.documentElement.lang = lang;
+
+            // Store preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Load saved language preference on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            if (savedLang !== 'en') {
+                // Trigger click on the appropriate language button
+                const langBtn = document.querySelector(`.lang-btn[onclick="setLanguage('${savedLang}')"]`);
+                if (langBtn) {
+                    langBtn.click();
+                }
+            }
+        });
+    </script>
 </body>
 </html>

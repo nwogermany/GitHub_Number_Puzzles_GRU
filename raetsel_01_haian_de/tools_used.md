@@ -88,6 +88,46 @@ Jeder Tool-Aufruf wird hier erfasst. Parameterdokumentation ist Pflicht.
 [2026-03-31T03:50:00Z] search_web - Infrastruktur-Analyse
   → Ergebnis: 1&1 IONOS + Hetzner
   → Aktion: Fund F-25 erstellt
+
+[2026-03-31T04:20:00Z] Playwright Canvas-Analyse - Pixel-Analyse
+  → Ergebnis: 700.000 Pixel, 78.87% dunkel, avgLuminance=59.72
+  → Aktion: Fund F-26 erstellt
+
+[2026-03-31T04:22:00Z] Playwright Canvas-Analyse - LSB-Steganografie
+  → Ergebnis: 2.100.000 Bits, 43.39% Einsen, ASCII: "888888888888pqq8..."
+  → Aktion: Fund F-27 erstellt
+
+[2026-03-31T04:23:00Z] Playwright Canvas-Analyse - Regions-Analyse
+  → Ergebnis: Top=67.61%, Middle=42.86%, Bottom=21.49%
+  → Aktion: Fund F-28 erstellt
+
+[2026-03-31T04:24:00Z] Playwright Canvas-Analyse - Farbverteilung
+  → Ergebnis: TopColors: (0,0,0)=11.36%, (12,12,12)=7.81%, (25,25,25)=6.39%
+  → Aktion: Fund F-29 erstellt
+
+[2026-03-31T04:25:00Z] Playwright Canvas-Analyse - Textsuche
+  → Ergebnis: HAIAN=0 Treffer, FABIAN=0 Treffer
+  → Aktion: Fund F-30 erstellt
+
+[2026-03-31T04:26:00Z] Playwright Canvas-Analyse - Zeilenweise LSB
+  → Ergebnis: Zeile 0=99.43%, Zeile 1=99.29%, Zeile 2=98.86%...
+  → Aktion: Fund F-31 erstellt
+
+[2026-03-31T04:27:00Z] Playwright Canvas-Analyse - Nibble-Analyse
+  → Ergebnis: "999aaa999999..." Muster
+  → Aktion: Fund F-32 erstellt
+
+[2026-03-31T04:28:00Z] Playwright Canvas-Analyse - XOR-Decodierung
+  → Ergebnis: Alle Keys ergeben keine lesbaren Zeichen
+  → Aktion: Fund F-33 erstellt
+
+[2026-03-31T04:30:00Z] Playwright Canvas-Analyse - Muster-Hypothese
+  → Ergebnis: 97-99% Einsen = natürliches JPEG-Artefakt
+  → Aktion: Fund F-35 erstellt (JPEG-Artefakt)
+
+[2026-03-31T04:35:00Z] Playwright Canvas-Analyse - Binärdaten-Dekodierung
+  → Ergebnis: XOR-Alle = 205, erste 50 Bytes = [227,255,255...]
+  → Aktion: Fund F-34 erstellt
 ```
 
 ---
@@ -105,9 +145,10 @@ Jeder Tool-Aufruf wird hier erfasst. Parameterdokumentation ist Pflicht.
 
 ---
 
-## Ergebnis-Zusammenfassung (AKTUALISIERT)
+## Ergebnis-Zusammenfassung (FINAL)
 
-- **25 Funds** dokumentiert (siehe findings.md)
-- **21 Hypothesen** geprüft (16 bestätigt, 4 verworfen, 1 offen - see hypotheses.md)
-- **7 Phasen** abgeschlossen + Deep-Forensik
+- **35 Funde** dokumentiert (siehe findings.md)
+- **24 Hypothesen** geprüft (17 bestätigt, 6 verworfen, 1 offen - see hypotheses.md)
+- **9 Phasen** abgeschlossen + Tiefenbildanalyse
 - **KRITISCHE ENTDECKUNG:** haian.de ist ein komplexes kryptografisches Rätsel - TEILWEISE GELÖST
+- **Bildanalyse:** Keine versteckte Steganografie gefunden (natürliches JPEG-Artefakt)

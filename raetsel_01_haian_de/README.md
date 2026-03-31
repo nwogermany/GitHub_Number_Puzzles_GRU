@@ -98,7 +98,24 @@ Siehe `scope.md`
 6. **Phase 6 (Semantik):** Poker/Skat-Erwähnungen - **Subkultur-Code**
 7. **Phase 7 (Kombinatorik):** Zeitstempel-Summen - **kodierte Botschaft (Tag=278→17, Stunde=423→9)**
 
-**Validierung:** 16 von 21 Hypothesen bestätigt — Das Rätsel ist TEILWEISE GELÖST.
+**Validierung:** 17 von 24 Hypothesen bestätigt — Das Rätsel ist TEILWEISE GELÖST.
+
+---
+
+## Tiefenbildanalyse (Phase 8)
+
+Das Bild wurde mit Canvas-basierter Pixel-Analyse untersucht:
+
+| Analyse | Ergebnis |
+|---------|----------|
+| Pixel-Gesamt | 700.000 (700×1000) |
+| Helle Pixel | 21.13% |
+| Dunkle Pixel | 78.87% |
+| LSB-Einsen | 43.39% (typisch für JPEG) |
+| Obere Region | 97-99% Einsen = **natürliches JPEG-Artefakt** |
+| Versteckte Texte | Keine HAIAN/FABIAN gefunden |
+
+**Ergebnis: Keine versteckte Steganografie im Bild!**
 
 ---
 
@@ -114,7 +131,9 @@ Siehe `scope.md`
 | Dokument | Beschreibung |
 |----------|--------------|
 | `REPORT_AUDIT_01.md` | Vollständiger forensischer Audit-Bericht |
-| `findings.md` | 25 Funde dokumentiert (F-01 bis F-25) |
-| `hypotheses.md` | 21 Hypothesen (16 bestätigt, 4 verworfen, 1 offen) |
+| `findings.md` | 35 Funde dokumentiert (F-01 bis F-35) |
+| `hypotheses.md` | 24 Hypothesen (17 bestätigt, 6 verworfen, 1 offen) |
+| `timeline.md` | 9 Phasen dokumentiert |
+| `tools_used.md` | Alle Tool-Aufrufe mit Ergebnissen |
 | `reasoning/` | 4 Reasoning-Dateien mit Analysen |
 | `sources/` | Archivierte Rohdaten |

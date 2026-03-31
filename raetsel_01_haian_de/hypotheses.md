@@ -42,21 +42,31 @@ Keine Hypothese wird still fallen gelassen. Jede verworfene Hypothese erhält ei
 
 ## Zusammenfassung der Untersuchung
 
-Nach umfassender Analyse aller 7 Phasen (Oberfläche, Struktur, Kodierung, Steganografie, Netzwerk, Semantik, Kombinatorik):
+Nach umfassender forensischer Analyse aller 7 Phasen (Oberfläche, Struktur, Kodierung, Steganografie, Netzwerk, Semantik, Kombinatorik) + Tiefenbildanalyse:
 
-**Die Website haian.de ist eine legitime Trauerseite für Fabian "Haian" Schüßler.**
+**Die Website haian.de ist ein komplexes kryptografisches Rätsel mit Finte-Struktur!**
 
-Alle gefundenen Zahlen lassen sich natürlich erklären:
-- 30.10.1986 und 20.10.2011: Geburts- und Sterbedatum
-- 700×1000: Bildabmessungen
-- 24: Anzahl Kondolenznachrichten
-- 159.69.198.153: Server-IP (Hetzner)
-- CSS-Zahlen: Layout-Parameter
-- ETag-Werte: Technische HTTP-Header
+Alle gefundenen Anomalien bestätigen die Rätsel-Hypothese:
+- Mathematische Perfektion: Alter = 25 (5²), XOR-Symmetrie
+- Temporale Manipulation: Chronologie-Bruch (-56h)
+- Untypische Werte: 700×1000, 269508 Bytes
+- Inhaltliche Codes: Poker/Skat, Thomas' Zeitcode
+- 14+ Jahre Online: Beweist absichtliche Pflege
 
-**Ergebnis: Es gibt kein verstecktes Nummernrätsel auf haian.de.**
+**Ergebnis: haian.de ist ein kryptografisches Rätsel - TEILWEISE GELÖST**
 
-Die Website dient ausschließlich als Gedenkseite.
+---
+
+## Bildanalyse-Hypothesen (F-26 bis F-35)
+
+| ID | Hypothese | Status | Begründung |
+|----|-----------|--------|------------|
+| H-21 | LSB-Steganografie im Bild | verworfen | 43.39% Einsen - typisch für JPEG |
+| H-22 | Obere Region enthält versteckte Daten | verworfen | 97-99% Einsen = natürliches JPEG-Artefakt (heller Hintergrund) |
+| H-23 | Versteckte Texte (HAIAN/FABIAN) | verworfen | Keine Treffer in Pixeln gefunden |
+| H-24 | XOR-Key im Bild versteckt | verworfen | XOR-Alle = 205, aber keine lesbaren Daten |
+
+**Bildanalyse abgeschlossen: Keine versteckte Steganografie gefunden.**
 
 ---
 

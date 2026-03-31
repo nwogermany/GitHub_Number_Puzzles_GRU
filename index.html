@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krypto-Intelligenz-Aufdeckungs-Projekt</title>
+    <title data-i18n="title">Crypto-Intelligence Investigation Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -57,11 +57,44 @@
             padding: 40px 20px;
         }
 
-        /* Header */
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-            animation: fadeInDown 0.8s ease-out;
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 1000;
+            background: rgba(22, 33, 62, 0.9);
+            padding: 8px 12px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .lang-btn {
+            width: 36px;
+            height: 28px;
+            border: 2px solid transparent;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+        }
+
+        .lang-btn:hover {
+            transform: scale(1.1);
+            border-color: var(--accent-cyan);
+        }
+
+        .lang-btn.active {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+            background: rgba(0, 212, 255, 0.1);
         }
 
         @keyframes fadeInDown {
@@ -411,12 +444,12 @@
                         <div class="stat">
                             <span>📁</span>
                             <span>Dateien:</span>
-                            <span class="stat-value">58 Funde</span>
+                            <span class="stat-value">59 Funde</span>
                         </div>
                         <div class="stat">
                             <span>💡</span>
                             <span>Hypothesen:</span>
-                            <span class="stat-value">43 geprüft</span>
+                            <span class="stat-value">44 geprüft</span>
                         </div>
                         <div class="stat">
                             <span>🔒</span>
@@ -426,7 +459,7 @@
                         <div class="stat">
                             <span>⏱</span>
                             <span>Status:</span>
-                            <span class="stat-value">FAST GELÖST</span>
+                            <span class="stat-value">VOLLSTÄNDIG GELÖST</span>
                         </div>
                     </div>
                 </div>

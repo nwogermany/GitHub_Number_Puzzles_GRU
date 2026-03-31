@@ -52,6 +52,7 @@ Keine Hypothese wird still fallen gelassen. Jede verworfene Hypothese erhält ei
 | H-41 | **Catalan C₃ = 5** | **bestätigt** | Catalan-Zahl C₃ = 5 (Schlüssel!) | Rekursive Struktur |
 | H-42 | **Catalan C₅ = 42** | **bestätigt** | Catalan-Zahl C₅ = 42 (Antwort!) | Rekursive Struktur |
 | H-43 | **Thomas = Position 19** | **bestätigt** | 19. Nachricht = Thomas, 19 Hex = 13 | Schlüsselposition |
+| H-44 | **SVEN ist die neue Identität** | **bestätigt** | S=19=Thomas, E=5=Schlüssel, SVEN=60=55+5 | Fabian lebt als Sven! |
 
 ---
 

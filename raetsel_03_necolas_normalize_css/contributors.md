@@ -2,23 +2,18 @@
 
 ## Haupt-Autoren
 
-| Name | GitHub URL | Rolle | Commits |
-|------|------------|-------|---------|
-| **Nicolas Gallagher** | https://github.com/necolas | Creator/Maintainer | ~100+ |
-| **Jonathan Neal** | https://github.com/jonathantneal | Co-Creator/Contributor | ~50+ |
+| Name | GitHub URL | Rolle |
+|------|------------|-------|
+| **Nicolas Gallagher** | https://github.com/necolas | Creator/Maintainer |
+| **Jonathan Neal** | https://github.com/jonathantneal | Co-Creator/Contributor |
 
 ---
 
-## Bekannte Contributors (aus der Community)
+## Contributors-Liste (Repo-evidenzbasiert)
 
-| Name | GitHub URL | Beitrag |
-|------|------------|---------|
-| **JohnAlbin** | https://github.com/JohnAlbin | normalize-scss Fork |
-| **nhall** | https://github.com/nhall | normalize.scss Sass-Port |
-| **kristerkari** | https://github.com/kristerkari | normalize.scss SCSS-Version |
-| **phenomnomnominal** | https://github.com/phenomnomnominal | normalize-scss Tooling |
-| **DArcMattr** | https://github.com/DArcMattr | _normalize.scss |
-| **csstools** | https://github.com/csstools | normalize.css Fork/Tools |
+- **Status:** Ausstehend
+- **Grund:** Eine vollständige, evidenzbasierte Liste aller GitHub-User, die **Commits in `necolas/normalize.css`** gemacht haben, erfordert die Auswertung der tatsächlichen Commit-Historie (z.B. via `git log` oder GitHub API).
+- **Ziel:** Für jeden Contributor: GitHub-User + Profil-URL + Anzahl Commits (aus der Historie abgeleitet).
 
 ---
 
@@ -26,17 +21,8 @@
 
 ### Timeline der Haupt-Versionen:
 
-| Version | Datum | Autor | Änderungen |
-|---------|-------|-------|------------|
-| **8.0.1** | 2018-11-05 | necolas | Aktuelle Version |
-| **8.0.0** | 2018 | necolas | Major Update |
-| **7.0.0** | 2017-05-02 | necolas | Revert changes |
-| **6.0.0** | 2017-03-26 | necolas | Remove opinionated rules |
-| **5.0.0** | ~2016 | necolas | Various fixes |
-| **4.0.0** | ~2015 | necolas | Major restructure |
-| **3.0.0** | ~2014 | necolas/jonathantneal | Drupal integration |
-| **2.0.0** | ~2013 | necolas/jonathantneal | Browser improvements |
-| **1.0.0** | ~2012 | necolas/jonathantneal | Initial release |
+- **Status:** Ausstehend
+- **Grund:** Datumsangaben/Autoren müssen direkt aus Tags/Releases/Commits des Repos belegt werden.
 
 ### Commit-Muster Analyse:
 
@@ -59,25 +45,8 @@
 
 ### Auffälligkeiten:
 
-1. **Plötzlicher Stopp 2018**:
-   - Nach 8.0.1 keine weiteren Commits
-   - Projekt "eingefroren" obwohl 53k+ Stars
-   - **Perfektion erreicht?** → 8.0.1 = Perfektion!
-
-2. **Nicolas Gallagher**:
-   - Twitter-Entwickler
-   - Bekannt für normalize.css, Vue.js, React
-   - Keine weiteren normalize.css Commits nach 2018
-
-3. **Jonathan Neal**:
-   - normalize.scss Ersteller
-   - Aktiver bei csstools
-   - Weiterhin aktiv in der CSS-Community
-
-4. **Community-Beiträge**:
-   - Viele Forks aber wenige PRs
-   - 364 geschlossene PRs
-   - 28 offene PRs (warten seit 2018!)
+- **Status:** Ausstehend
+- **Grund:** Aussagen zu „Stop“, PR-Zahlen, Aktivität und Autorenschaft müssen mit konkreten Datenpunkten (Snapshots/Datum/Link) belegt werden.
 
 ---
 
@@ -85,14 +54,8 @@
 
 ### Commit-Analyse mit 999/1001:
 
-- **8.0.1** = 8 + 0 + 1 = 9 = 3²
-- **2018** = 2+0+1+8 = 11 (Primzahl!)
-- **53.7k Stars** = 53.700
-- **8.0.1** = Perfektion + Unendlichkeit + Einheit
-
-### Fehlende Commits (theoretisch):
-- Commit #552 → #554 (Zeile 553 fehlt)
-- Entspricht dem Muster aus den Debug-Zeilen!
+- **Status:** Ausstehend
+- **Grund:** Commit-Nummern/„fehlende Commits“ sind ohne echte Commit-Historie nicht belegbar.
 
 ---
 
@@ -111,13 +74,8 @@
 
 ## Fazit
 
-Die normalize.css Commit-Historie zeigt:
-1. **Perfektion erreicht** → 8.0.1 = letzte Version
-2. **Plötzlicher Stopp** → 2018 = Ende der Entwicklung
-3. **Zwei Haupt-Autoren** → Nicolas Gallagher + Jonathan Neal
-4. **Viele Forks** → aber keine offiziellen Updates mehr
-
-Die fehlenden Debug-Zeilen (552→554) könnten auf versteckte Muster in der Commit-Historie hinweisen!
+- Für eine belastbare Commit-/Contributor-Analyse müssen die Daten aus dem tatsächlichen Repo extrahiert werden.
+- Sobald diese Daten vorliegen, können wir sie auf Zahlencodes (z.B. 999/1001, 5er/8er-Strukturen, Lücken/Cluster) prüfen.
 
 ---
 

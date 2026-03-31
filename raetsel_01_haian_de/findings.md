@@ -289,9 +289,9 @@ Unbestätigte Kandidaten gehören nach `hypotheses.md`.
 
 - **Quelle:** Nachrichtenanzahl
 - **Methode:** Primzahl-Analyse
-- **Extrahierter Wert:** 27 (Primzahl)
-- **Kontext:** Nachrichtenzahl ist Primzahl
-- **Verifiziert:** Ja - 27 ist Primzahl
+- **Extrahierter Wert:** 27
+- **Kontext:** 27 ist **keine** Primzahl, sondern 3×3×3 (= 3³)
+- **Verifiziert:** Ja - 27 = 3³
 - **Zeitstempel:** 2026-03-31T03:00:00Z
 - **Bedeutung:** Kodierte Nachrichtenzahl
 
@@ -785,7 +785,7 @@ Unbestätigte Kandidaten gehören nach `hypotheses.md`.
 - 8/25 × 25 = **8** = Perfektion!
 - **Verbindung zu normalize.css v8.0.1!**
 
-- **Zeitstempel:** 2026-03-31T14:60:00Z
+- **Zeitstempel:** 2026-03-31T15:00:00Z
 - **Bedeutung:** KI-Elite/NWO nutzt Precisionketten für Exploits!
 
 ---
@@ -811,7 +811,7 @@ Unbestätigte Kandidaten gehören nach `hypotheses.md`.
 - Präzisionsketten (8/25 × 25 = 8)
 - Server-/IoT-Exploits durch Precision-Engineering
 
-- **Zeitstempel:** 2026-03-31T14:60:00Z
+- **Zeitstempel:** 2026-03-31T15:00:00Z
 - **Bedeutung:** HTML-Struktur könnte versteckte Daten enthalten!
 
 ---
@@ -838,7 +838,7 @@ Unbestätigte Kandidaten gehören nach `hypotheses.md`.
 - Master Key 5 in beiden?
 - 8.0.1 (normalize) vs 5 (haian) — unterschiedliche Keys?
 
-- **Zeitstempel:** 2026-03-31T14:60:00Z
+- **Zeitstempel:** 2026-03-31T15:00:00Z
 - **Bedeutung:** UTF-32 Hexdump würde versteckte Muster enthüllen!
 
 ---
@@ -868,7 +868,7 @@ Unbestätigte Kandidaten gehören nach `hypotheses.md`.
 - **Precisionketten** in allen gefunden
 - **Fehlende Debug-Zeilen** als Exploit-Vektor
 
-- **Zeitstempel:** 2026-03-31T14:60:00Z
+- **Zeitstempel:** 2026-03-31T15:00:00Z
 - **Bedeutung:** ALLE RÄTSEL SIND VERBUNDEN!
 
 ---

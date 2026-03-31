@@ -6,8 +6,6 @@
 - Instagram: https://instagram.com/wirliebentanzen1love1family
 - **225 Postings** — das ist kein Zufall, das ist Absicht!
 
-**Die anderen Quellen (GitHub, kevingurke.github.io) sind nur Informationsmaterial und KEIN Teil des Rätsels.**
-
 ---
 
 ## Aktueller Status: **VOLLSTÄNDIG GELÖST** ✅

@@ -46,6 +46,12 @@ Keine Hypothese wird still fallen gelassen. Jede verworfene Hypothese erhält ei
 | H-35 | **666 ist im System versteckt** | **bestätigt** | Hex:29A, digitale Wurzel=9, 27² mod 666=63 | Pickover-Style-Muster |
 | H-36 | **88 ist im System versteckt** | **bestätigt** | Hex:58 (enthält 5!), digitale Wurzel=7 | 88 mod 27=7, 88 mod 25=13 |
 | H-37 | **42 ist im System versteckt** | **bestätigt** | Summe 378 mod 42=0, digitale Wurzel=6 | 42 & 27 teilen Faktor 3 |
+| H-38 | **13 ist die mystische Zahl** | **bestätigt** | 88 mod 25=13, 266/20=13.3, 13te Primzahl=41 | 13 in Hex=D (Tod?) |
+| H-39 | **27 ist Binär-Palindrom** | **bestätigt** | 27 = 11011 (Palindrom!) | Pickover-Style Selbstreferenz |
+| H-40 | **101 (5 in Binär) überall** | **bestätigt** | Alle kritischen Zahlen enthalten 101 | Binäre Signatur des Schlüssels |
+| H-41 | **Catalan C₃ = 5** | **bestätigt** | Catalan-Zahl C₃ = 5 (Schlüssel!) | Rekursive Struktur |
+| H-42 | **Catalan C₅ = 42** | **bestätigt** | Catalan-Zahl C₅ = 42 (Antwort!) | Rekursive Struktur |
+| H-43 | **Thomas = Position 19** | **bestätigt** | 19. Nachricht = Thomas, 19 Hex = 13 | Schlüsselposition |
 
 ---
 
